@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://q7v6idtsjdq3"]
+
+[ext_resource type="Script" uid="uid://dkvqf6hoola1m" path="res://Scripts/spider.gd" id="1_script"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_h33fn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_body"]
+size = Vector2(12, 8)
+
+[node name="Spider" type="CharacterBody2D" unique_id=1340037266]
+collision_mask = 3
+script = ExtResource("1_script")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1024764840]
+position = Vector2(0, -8)
+sprite_frames = SubResource("SpriteFrames_h33fn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1590928655]
+position = Vector2(0, -4)
+shape = SubResource("RectangleShape2D_body")

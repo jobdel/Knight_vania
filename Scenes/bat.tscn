@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://i6eo0xkuvlvr"]
+
+[ext_resource type="Script" uid="uid://brywalh1sbsa3" path="res://Scripts/bat.gd" id="1_script"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_j7be8"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_body"]
+radius = 6.0
+
+[node name="Bat" type="CharacterBody2D" unique_id=1316693224]
+collision_mask = 0
+script = ExtResource("1_script")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1628898591]
+sprite_frames = SubResource("SpriteFrames_j7be8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2127077155]
+shape = SubResource("CircleShape2D_body")
