@@ -1,0 +1,1 @@
+small project to get better at game design. goal was a metroid vania with a focus on smooth movement. its still a work in progress. started out with the tutorial form brackeys on youtube and went from there. artwork is free from itch.io 
